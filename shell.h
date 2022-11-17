@@ -5,11 +5,12 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
-#include <limits.h>
+#include <sys/types.h>
 #include <sys/wait.h>
 #include <sys/stat.h>
-#include <sys/types.h>
-#include <signal.h>
+#include <limits.h>
+#include <fcntl.h>
+#include <errno.h>
 
 /* for read/write buffers */
 #define READ_BUF_SIZE 1024
